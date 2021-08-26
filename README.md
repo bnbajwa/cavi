@@ -668,6 +668,7 @@ Note, that new operations/functionality can be added via ```cavi::visit``` (and 
 ## Additional Notes
 - Classes cannot be constructed via aggregate initialization — this is a side effect of a preventative measure in place to stop a source of mistakes
 - A class may only be part of one hierarchy
+- Library can be used in a multi-threaded environment safely as hierarchy base data is only written in constructors and after that it is only read
 
 ## To-do list
 The following are currently on the to-do list:
